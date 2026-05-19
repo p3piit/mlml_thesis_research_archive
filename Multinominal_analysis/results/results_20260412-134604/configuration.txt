@@ -1,0 +1,97 @@
+List of 4
+ $ K_folds     : num 10
+ $ seed_folds  : num 30
+ $ seed_cluster: num 30
+ $ scenario_cfg:List of 4
+  ..$ s1:List of 6
+  .. ..$ multinom_formula:Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ mblogit_formula :Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ cart_formula    :Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ rf_formula      :Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ gmert_args      :List of 7
+  .. .. ..$ max_iter_out: num 10
+  .. .. ..$ max_iter_inn: num 100
+  .. .. ..$ tol         : num 1e-04
+  .. .. ..$ xval        : num 0
+  .. .. ..$ maxdepth    : num 5
+  .. .. ..$ minsplit    : num 20
+  .. .. ..$ minbucket   : num 8
+  .. ..$ gmerf_args      :List of 5
+  .. .. ..$ max_iter_out : num 10
+  .. .. ..$ max_iter_inn : num 100
+  .. .. ..$ tol          : num 1e-04
+  .. .. ..$ ntrees       : num 100
+  .. .. ..$ min_node_size: num 10
+  ..$ s2:List of 6
+  .. ..$ multinom_formula:Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ mblogit_formula :Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ cart_formula    :Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ rf_formula      :Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ gmert_args      :List of 7
+  .. .. ..$ max_iter_out: num 10
+  .. .. ..$ max_iter_inn: num 100
+  .. .. ..$ tol         : num 1e-04
+  .. .. ..$ xval        : num 0
+  .. .. ..$ maxdepth    : num 5
+  .. .. ..$ minsplit    : num 20
+  .. .. ..$ minbucket   : num 8
+  .. ..$ gmerf_args      :List of 5
+  .. .. ..$ max_iter_out : num 10
+  .. .. ..$ max_iter_inn : num 100
+  .. .. ..$ tol          : num 1e-04
+  .. .. ..$ ntrees       : num 100
+  .. .. ..$ min_node_size: num 10
+  ..$ s3:List of 6
+  .. ..$ multinom_formula:Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ mblogit_formula :Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ cart_formula    :Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ rf_formula      :Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ gmert_args      :List of 7
+  .. .. ..$ max_iter_out: num 10
+  .. .. ..$ max_iter_inn: num 100
+  .. .. ..$ tol         : num 1e-04
+  .. .. ..$ xval        : num 0
+  .. .. ..$ maxdepth    : num 5
+  .. .. ..$ minsplit    : num 20
+  .. .. ..$ minbucket   : num 8
+  .. ..$ gmerf_args      :List of 5
+  .. .. ..$ max_iter_out : num 10
+  .. .. ..$ max_iter_inn : num 100
+  .. .. ..$ tol          : num 1e-04
+  .. .. ..$ ntrees       : num 100
+  .. .. ..$ min_node_size: num 10
+  ..$ s4:List of 6
+  .. ..$ multinom_formula:Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ mblogit_formula :Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ cart_formula    :Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ rf_formula      :Class 'formula'  language y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10
+  .. .. .. ..- attr(*, ".Environment")=<environment: R_GlobalEnv> 
+  .. ..$ gmert_args      :List of 7
+  .. .. ..$ max_iter_out: num 10
+  .. .. ..$ max_iter_inn: num 100
+  .. .. ..$ tol         : num 1e-04
+  .. .. ..$ xval        : num 0
+  .. .. ..$ maxdepth    : num 5
+  .. .. ..$ minsplit    : num 20
+  .. .. ..$ minbucket   : num 8
+  .. ..$ gmerf_args      :List of 5
+  .. .. ..$ max_iter_out : num 10
+  .. .. ..$ max_iter_inn : num 100
+  .. .. ..$ tol          : num 1e-04
+  .. .. ..$ ntrees       : num 100
+  .. .. ..$ min_node_size: num 10
