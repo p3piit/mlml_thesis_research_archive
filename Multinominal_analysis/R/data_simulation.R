@@ -1,5 +1,5 @@
 # ===============================================================
-# generate_categorical_data.R
+# data_simulation.R
 #
 # Generates simulated clustered datasets with a 5-class
 # categorical outcome for the multinomial simulation study.
@@ -413,7 +413,7 @@ df2 <- sim_cat5_data2()
 df3 <- sim_cat5_data3()
 df4 <- sim_cat5_data4()
 
-write.csv(df1, "data/simulated_data1.csv", row.names = FALSE)
-write.csv(df2, "data/simulated_data2.csv", row.names = FALSE)
-write.csv(df3, "data/simulated_data3.csv", row.names = FALSE)
-write.csv(df4, "data/simulated_data4.csv", row.names = FALSE)
+write.csv(df1, here("Multinominal_analysis", "data", "simulated_data1.csv"), row.names = FALSE)
+write.csv(df2, here("Multinominal_analysis", "data", "simulated_data2.csv"), row.names = FALSE)
+write.csv(df3, here("Multinominal_analysis", "data", "simulated_data3.csv"), row.names = FALSE)
+write.csv(df4, here("Multinominal_analysis", "data", "simulated_data4.csv"), row.names = FALSE)

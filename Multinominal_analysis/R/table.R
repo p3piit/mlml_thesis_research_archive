@@ -105,8 +105,9 @@ make_metric_table <- function(results, metric_mean, metric_sd,
 # ---------------------------------------------------------------
 # Output directory
 # ---------------------------------------------------------------
-if (!dir.exists("tables")) dir.create("tables", recursive = TRUE)
-
+if (!dir.exists(here("Multinominal_analysis", "tables"))) {
+  dir.create(here("Multinominal_analysis", "tables"), recursive = TRUE)
+}
 
 # ---------------------------------------------------------------
 # Build one table per metric
@@ -135,14 +136,21 @@ xtable(wf1_tab,
 # ---------------------------------------------------------------
 # PNG output via gridExtra::grid.table()
 # ---------------------------------------------------------------
-png("tables/acc_table.png",  width = 600, height = 400)
+png(here("Multinominal_analysis", "tables", "acc_table.png"), 
+    width = 600, 
+    height = 400)
 grid.table(acc_tab)
 dev.off()
 
-png("tables/f1_table.png",   width = 600, height = 400)
+png(here("Multinominal_analysis", "tables","f1_table.png"),   
+    width = 600, 
+    height = 400)
 grid.table(f1_tab)
 dev.off()
 
-png("tables/wf1_table.png",  width = 600, height = 400)
+png(here("Multinominal_analysis", "tables","wf1_table.png"),  
+    width = 600, 
+    height = 400)
 grid.table(wf1_tab)
 dev.off()
+

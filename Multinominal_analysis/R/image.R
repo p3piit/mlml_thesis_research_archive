@@ -174,7 +174,7 @@ ggplot(
 # requirements and the resolution used for the thesis figures.
 # ---------------------------------------------------------------
 ggsave(
-  filename = "images/graph.png",
+  filename = here("Multinominal_analysis", "images", "graph.png"),
   width    = 8,
   height   = 6,
   dpi      = 300
