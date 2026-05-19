@@ -86,6 +86,7 @@ This repository contains data in the following structure:
 │       ├── bias_table.png
 │       ├── f1_mag_table.png
 │       └── f1_min_table.png
+├── LICENSE.md
 ├── Multinominal_analysis
 │   ├── R
 │   │   ├── analysis.R
