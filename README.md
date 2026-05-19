@@ -33,9 +33,9 @@ The package implements the full family of Generalised Mixed-Effects Regression T
 
 The core functions used in this archive are:
 
-- `fit_gmert_small()` — fits a binary GMERT model via the PQL-EM algorithm (Algorithm 1 of the thesis).
-- `fit_gmerf_small()` — fits a binary GMERF model, replacing the tree step with a random forest.
-- `fit_gmert_cat()` — fits a multinomial GMERT model using the categorical extension (Appendix B).
+- `fit_gmert_small()` — fits a binary GMERT model via the Woodbury-based PQL-EM algorithm (Algorithm 1 and Appendix A of the thesis).
+- `fit_gmerf_small()` — fits a binary GMERF model, replacing the tree step with a random forest while using the same Woodbury-based updates.
+- `fit_gmert_cat()` — fits a multinomial GMERT model using the categorical extension (Appendix B), with Woodbury-based updates applied to the stacked (K−1)q × (K−1)q system.
 - `fit_gmerf_cat()` — fits a multinomial GMERF model using the categorical extension (Appendix B).
 - `predict_gmert()` / `predict_gmerf()` — generate predictions for new observations; population-level predictions (random effects set to zero) are used throughout the cross-validation.
 - `predict_gmert_cat()` / `predict_gmerf_cat()` — the multinomial equivalents, with an additional `prob_saved = TRUE` argument to return the full N × K probability matrix.
