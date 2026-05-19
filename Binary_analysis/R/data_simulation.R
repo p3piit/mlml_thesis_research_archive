@@ -335,6 +335,7 @@ df_bin2 <- sim_data2(G = 30, n_i = 60)
 df_bin3 <- sim_data3(G = 30, n_i = 60)
 df_bin4 <- sim_data4(G = 30, n_i = 60)
 
+library(here)
 write.csv(df_bin1, here("Binary_analysis", "data", "simulated_data1.csv"), row.names = FALSE)
 write.csv(df_bin2, here("Binary_analysis", "data", "simulated_data2.csv"), row.names = FALSE)
 write.csv(df_bin3, here("Binary_analysis", "data", "simulated_data3.csv"), row.names = FALSE)

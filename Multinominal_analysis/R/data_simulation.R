@@ -413,6 +413,7 @@ df2 <- sim_cat5_data2()
 df3 <- sim_cat5_data3()
 df4 <- sim_cat5_data4()
 
+library(here)
 write.csv(df1, here("Multinominal_analysis", "data", "simulated_data1.csv"), row.names = FALSE)
 write.csv(df2, here("Multinominal_analysis", "data", "simulated_data2.csv"), row.names = FALSE)
 write.csv(df3, here("Multinominal_analysis", "data", "simulated_data3.csv"), row.names = FALSE)
