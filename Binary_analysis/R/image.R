@@ -161,9 +161,8 @@ ggplot(
 # Written to images/ relative to the working directory.
 # The directory must exist before running this script.
 # ---------------------------------------------------------------
-ggsave(
-  filename = "images/graph.png",
-  width    = 8,
-  height   = 6,
-  dpi      = 300
-)
+# Binary_analysis/R/image.R
+ggsave(here("Binary_analysis", "images", "graph.png"),
+       width = 8, 
+       height = 6,
+       dpi = 300)

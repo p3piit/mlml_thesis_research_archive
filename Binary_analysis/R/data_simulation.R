@@ -21,10 +21,10 @@
 # of the thesis.
 #
 # Output: four CSV files saved to data/
-#   simulated_data_bin1.csv  (scenario 1)
-#   simulated_data_bin2.csv  (scenario 2)
-#   simulated_data_bin3.csv  (scenario 3)
-#   simulated_data_bin4.csv  (scenario 4)
+#   simulated_data.csv  (scenario 1)
+#   simulated_data.csv  (scenario 2)
+#   simulated_data.csv  (scenario 3)
+#   simulated_data.csv  (scenario 4)
 #
 # Dependencies: MASS (mvrnorm)
 # ===============================================================
@@ -335,7 +335,9 @@ df_bin2 <- sim_data2(G = 30, n_i = 60)
 df_bin3 <- sim_data3(G = 30, n_i = 60)
 df_bin4 <- sim_data4(G = 30, n_i = 60)
 
-write.csv(df_bin1, "data/simulated_data1.csv", row.names = FALSE)
-write.csv(df_bin2, "data/simulated_data2.csv", row.names = FALSE)
-write.csv(df_bin3, "data/simulated_data3.csv", row.names = FALSE)
-write.csv(df_bin4, "data/simulated_data4.csv", row.names = FALSE)
+write.csv(df_bin1, here("Binary_analysis", "data", "simulated_data1.csv"), row.names = FALSE)
+write.csv(df_bin2, here("Binary_analysis", "data", "simulated_data2.csv"), row.names = FALSE)
+write.csv(df_bin3, here("Binary_analysis", "data", "simulated_data3.csv"), row.names = FALSE)
+write.csv(df_bin4, here("Binary_analysis", "data", "simulated_data4.csv"), row.names = FALSE)
+
+

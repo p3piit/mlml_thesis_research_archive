@@ -108,8 +108,9 @@ make_metric_table_bin <- function(results, metric_mean, metric_sd,
 # ---------------------------------------------------------------
 # Output directory
 # ---------------------------------------------------------------
-if (!dir.exists("tables")) dir.create("tables", recursive = TRUE)
-
+if (!dir.exists(here("Binary_analysis", "tables"))) {
+  dir.create(here("Binary_analysis", "tables"), recursive = TRUE)
+}
 
 # ---------------------------------------------------------------
 # Build one table per metric
@@ -143,18 +144,28 @@ xtable(bias_tab_bin,
 # ---------------------------------------------------------------
 # PNG output via gridExtra::grid.table()
 # ---------------------------------------------------------------
-png("tables/acc_table.png",    width = 600, height = 400)
+png(here("Binary_analysis", "tables","acc_table.png"),    
+    width = 600, 
+    height = 400)
 grid.table(acc_tab_bin)
 dev.off()
 
-png("tables/f1_mag_table.png", width = 600, height = 400)
+png(here("Binary_analysis", "tables","f1_mag_table.png"), 
+    width = 600, 
+    height = 400)
 grid.table(f1_mag_tab_bin)
 dev.off()
 
-png("tables/f1_min_table.png", width = 600, height = 400)
+png(here("Binary_analysis", "tables","f1_min_table.png"), 
+    width = 600, 
+    height = 400)
 grid.table(f1_min_tab_bin)
 dev.off()
 
-png("tables/bias_table.png",   width = 600, height = 400)
+png(here("Binary_analysis", "tables","bias_table.png"),   
+    width = 600, 
+    height = 400)
 grid.table(bias_tab_bin)
 dev.off()
+
+
