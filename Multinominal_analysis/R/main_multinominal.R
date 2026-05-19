@@ -1,5 +1,5 @@
 # ===============================================================
-# configuration.R
+# main_multinominal.R
 #
 # Master script for the multinomial simulation study.
 # This is the single entry point to reproduce all results
