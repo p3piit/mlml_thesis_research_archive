@@ -115,6 +115,7 @@ This repository contains data in the following structure:
 │       ├── f1_table.png
 │       └── wf1_table.png
 ├── README.md
+├── Requirements.md
 ├── mlml_thesis_research_archive.Rproj
 └── renv.lock
 ```
@@ -210,17 +211,30 @@ Records the exact versions of all R packages used in the analysis. Used by `renv
 To reproduce the simulation results, the following are needed:
 
 - **R** (≥ 4.6.0)
-- **RStudio** (recommended; ensures the working directory is set correctly by the `.Rproj` file)
+- **RStudio** (recommended; ensures the working directory is set correctly
+  by the `.Rproj` file)
 - The **`renv`** package for restoring the R environment
 - The **`mlml`** package (see [The mlml Package](#the-mlml-package) above)
+- The **`here`** package for project-relative path construction
 
-Install the required packages by running the following in the R console after opening the `.Rproj` file:
+Full details on package versions and hardware requirements are provided in
+[`Requirements.md`](Requirements.md).
+
+To restore the exact R environment used for the analysis, open
+`mlml_thesis_research_archive.Rproj` in RStudio and run:
 
 ```r
 renv::restore()
 ```
 
-> **Hardware recommendation:** The cross-validation runs in parallel using a PSOCK cluster with one worker per fold (10 folds). Ideally, the machine running the analysis should have **at least 11 cores** — 10 for the parallel workers and 1 for the main R session. The analysis can in principle run on fewer cores, but each missing core forces workers to share CPU time, which increases computation time substantially. Thread-level parallelism is disabled within each worker to prevent over-subscription across processes.
+> **Hardware recommendation:** The cross-validation runs in parallel using a
+> PSOCK cluster with one worker per fold (10 folds). Ideally, the machine
+> running the analysis should have **at least 11 cores** — 10 for the parallel
+> workers and 1 for the main R session. The analysis can in principle run on
+> fewer cores, but each missing core forces workers to share CPU time, which
+> increases computation time substantially. Thread-level parallelism is
+> disabled within each worker to prevent over-subscription across processes.
+> Full hardware specifications are listed in [`Requirements.md`](Requirements.md).
 
 ### Running the Scripts
 
